@@ -268,7 +268,7 @@ class Filters extends Component {
           }
           
        console.log("dataa11111")
-        axios.post(`http://localhost:5000/property/getsearch`, abc)
+        axios.post(`http://http://188.166.148.8:5000/property/getsearch`, abc)
             .then(res => {
                 console.log(res)
                 let da1=JSON.stringify(res)

@@ -170,7 +170,7 @@ class Search extends Component {
       console.log("WILL")
 
       axios
-      .get(`http://localhost:5000/property/get`)
+      .get(`http://http://188.166.148.8:5000/property/get`)
       .then((res) => {
         // console.log(res.data.data);
         this.setState({ product: res.data.data });
@@ -378,7 +378,7 @@ class Search extends Component {
     //   }
     localStorage.clear()
     axios
-      .post(`http://localhost:5000/property/getsearch`, abc)
+      .post(`http://http://188.166.148.8:5000/property/getsearch`, abc)
       .then((res) => {
         console.log(res);
         this.setState({ searchData: res.data.data });
